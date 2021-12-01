@@ -1,0 +1,47 @@
+var _uuid = require('uuid');
+const state = localStorage.getItem("todo-list") ? JSON.parse(localStorage.getItem("todo-list")) : [];
+const todoItems = document.querySelector(".todo-items");
+const todoInput = document.querySelector(".todo-input input");
+const todoInputBtn = document.querySelector(".todo-input span");
+const addItem = (val, checked = false) => {
+  const uuid = _uuid.v4();
+  const item = document.createElement('div');
+  const text = document.createElement('span');
+  const clear = document.createElement('div');
+  const checkbox = document.createElement('input');
+  text.innerText = val;
+  text.className = checked ? 'checked' : '';
+  clear.innerText = "Clear";
+  clear.addEventListener("click", () => {
+    item.remove();
+  });
+  checkbox.type = 'checkbox';
+  checkbox.value = checked;
+  checkbox.addEventListener("change", e => {
+    const res = state?.find?.(el => el.uuid === uuid);
+    res.checked = e.target.checked;
+    if (e.target.checked) {
+      text.className = "checked";
+      const el = document.querySelector(`[data-uuid="${uuid}"]`);
+    } else {
+      text.className = "";
+    }
+    localStorage.setItem("todo-list", JSON.stringify(state));
+  });
+  item.className = "item";
+  item.dataset.uuid = uuid;
+  console.log(item);
+  item.appendChild(checkbox);
+  item.appendChild(text);
+  item.appendChild(clear);
+  todoItems.appendChild(item);
+  todoInput.value = "";
+  state.push({
+    uuid: uuid,
+    text: val,
+    checked: false
+  });
+};
+console.log(todoInput);
+todoInputBtn.addEventListener("click", () => addItem(todoInput.value));
+addItem("new Item");

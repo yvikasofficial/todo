@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link rel="stylesheet" href="381af7e926dee1ccea208748d9a01fe7">
+    <!-- Bootstrap CSS -->
+    <link href="ad0d28d8a57c068e1f720b138d40266f" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="bg-img-wrapper">
+        <div></div>
+        <img src="4b256c1fb28555792ce3512d81df81d4" alt="">
+    </div>
+
+   <div class="main">
+      <div class="main-wrapper">
+        <div class="title">
+          <h2>TODO</h2>
+        </div>
+
+        <div class="main">
+          <div class="card" style="e1aa7c0946c239281695ef9a1053f2e4">
+            <div class="card-header">
+              Featured
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+   </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="84d572134fdb44e91d3dffc61f52f5dd" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

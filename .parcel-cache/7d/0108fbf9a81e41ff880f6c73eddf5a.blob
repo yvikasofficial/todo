@@ -1,0 +1,14 @@
+
+const state = localStorage.getItem("todo-list") ? JSON.parse(localStorage.getItem("todo-list")) : []
+
+const todoItems = document.querySelector(".todo-items")
+
+const addItem = () => {
+    const item = document.createElement('div');
+    const text = document.createElement('text');
+    const clear = document.createElement('div');
+    const checkbox = document.createElement('input');
+
+    
+
+}

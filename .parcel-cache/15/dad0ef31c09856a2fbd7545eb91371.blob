@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-img-wrapper {
+    height: 50vh;
+    overflow: hidden;
+}
+
+.bg-img-wrapper div {
+    background: linear-gradient(0deg, rgba(34,193,195,0.3967787798713235) 0%, rgba(253,187,45,0.3743698162858894) 100%);
+    position: absolute;
+}
+
+.bg-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+
+}

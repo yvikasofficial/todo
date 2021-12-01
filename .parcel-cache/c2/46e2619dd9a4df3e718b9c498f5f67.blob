@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-img-wrapper {
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg-img-wrapper div {
+    background: linear-gradient(0deg, rgba(34,193,195,0.6712885837928921) 0%, rgba(253,187,45,0.6236695361738445) 100%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.bg-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+
+}
+
+.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+}
+
+.main-wrapper {
+    width: 700px;
+    margin: 0 auto;
+    background-color: rebeccapurple;
+}

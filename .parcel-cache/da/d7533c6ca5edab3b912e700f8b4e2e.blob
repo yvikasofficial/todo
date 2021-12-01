@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-img-wrapper {
+    height: 50vh;
+    overflow: hidden;
+}
+
+.bg-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

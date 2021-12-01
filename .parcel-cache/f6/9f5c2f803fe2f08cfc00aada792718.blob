@@ -1,0 +1,34 @@
+
+const state = localStorage.getItem("todo-list") ? JSON.parse(localStorage.getItem("todo-list")) : []
+
+const todoItems = document.querySelector(".todo-items")
+const todoInput = document.querySelector(".todo-input input")
+const todoInputBtn = document.querySelector(".todo-input span")
+
+const addItem = (val) => {
+    const item = document.createElement('div');
+    const text = document.createElement('span');
+    const clear = document.createElement('div');
+    const checkbox = document.createElement('input');
+
+    text.innerText = val;
+
+    clear.innerText = "Clear";
+    checkbox.type = 'checkbox';
+    item.className = "item";
+
+    item.appendChild(checkbox);
+    item.appendChild(text);
+    item.appendChild(clear);
+    todoItems.appendChild(item);
+
+}
+
+console.log(todoInput);
+todoInputBtn.addEventListener("click", () => console.log(todoInput.target.value));
+
+
+
+
+
+addItem("new Item")
